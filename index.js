@@ -72,7 +72,7 @@ function hoursWorkedOnDate(date) {
 // }
 
 function wagesEarnedOnDate(date) {
-  return hoursWorkedOnDate(date).bind(this) * this.payPerHour
+  return hoursWorkedOnDate(date) * this.payPerHour
 }
 
 function calculatePayroll(employees) {
